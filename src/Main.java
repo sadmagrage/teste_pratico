@@ -96,7 +96,7 @@ public class Main {
 		Double comissaoSistema = total * empresa.getTaxa();
 		int idVenda = vendas.isEmpty() ? 1 : vendas.get(vendas.size() - 1).getCódigo() + 1;
 		Venda venda = new Venda(idVenda, carrinho.stream().toList(), total, comissaoSistema, empresa, cliente);
-		empresa.setSaldo(empresa.getSaldo() + total);
+		empresa.setSaldo(empresa.getSaldo() + total - comissaoSistema);
 		vendas.add(venda);
 		return venda;
 	}

@@ -23,3 +23,5 @@ Visualizando o que foi comprado, se nada foi comprado, fica vazio, corrigido col
 Para fazer com que o administrador tivesse acesso a todas as informações, consideramos ele como uma empresa, para seguir o caminho das mesmas, mas com um if para separá-la das demais, fazendo com que ele tenha acesso a informação de todas as empresas e todos os produtos.
 
 Mensagem das vendas faltando o ": R$" no total líquido.
+
+Para que o saldo da empresa fosse a parte total descontada da comissão do sistema, só foi necessária a alteração na função criarVenda, onde o total é subtraido da variável comissaoSistema.
